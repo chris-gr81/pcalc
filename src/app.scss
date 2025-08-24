@@ -1,10 +1,24 @@
+@use "@/styles/variables" as *;
+@use "@/styles/mixins" as *;
+
 .pcalc-wrapper {
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 100vw;
   align-items: center;
-  justify-content: center;
+  box-sizing: border-box;
+  padding: 1rem;
+  gap: 2rem;
+  width: 100%;
+  max-width: 800px;
+  font-family: $main-font;
+  background-color: $white-color;
+  color: $primary-color;
+
+  @include respond-to(pc) {
+    padding: 30px;
+    max-width: 1430px;
+  }
 }

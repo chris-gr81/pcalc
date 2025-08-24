@@ -1,4 +1,4 @@
-import BaseInput from "../baseInput/BaseInput";
+import BaseInput from "../numberInput/NumberInput";
 import SelectInput from "../selectInput/SelectInput";
 import "./inputRow.scss";
 
